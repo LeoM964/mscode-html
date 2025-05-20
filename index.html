@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header id="header"><h1>Meu Site de Estudos</h1>
+    
+    <nav id = "nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="criarConta.html">Criar Conta</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <form action="search.html" method="get" style="display: inline-block; margin-left: 20px;">
+        <input type="text" name="q" placeholder="Buscar..." />
+        <button type="submit">Buscar</button>
+    </form>
+    </header>   
+   
+<body>
+    <hr>
+    <h2>Bem-Vindo à nossa loja!</h2>
+    
+        <img src="Pictures/imagemprincipal.jpg" alt="Logo do Site" style="height: 50px; margin-right: 20px;">
+    <br><br><br>
+        <label for="categorias"><strong><h3>Categorias</h3></strong></label>
+        <ul id="categorias">
+            <li>Regras</li>
+            <li>Estatisticas</li>
+            <li>Links</li>
+            <li>Perguntas e Respostas</li>
+        </ul>
+    
+            
+            <label for="tabela de produtos"><strong><h3>Nossos Produtos</h3></strong></label>
+        </table id="tabela de produtos">
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <thead>
+             <th style="border: 1px solid black;">Nome</th>        
+             <th style="border: 1px solid black;">Valor</th>
+             <th style="border: 1px solid black;">Foto</th>
+            </thead>
+            
+            <tr>
+            <td style="border: 1px solid black;">Meia</td>
+            <td style="border: 1px solid black;">R$ 50,00</td>
+            <td style="border: 1px solid black;"><img src="Pictures/meia.jpeg" alt="Meia Branca"></td>
+            </tr>
+            <tr>
+            <td style="border: 1px solid black;">Camisa</td>
+            <td style="border: 1px solid black;">R$ 150,00</td>  
+            <td style="border: 1px solid black;"><img src="Pictures/camisa.jpeg" alt="Camisa Branca"></td>
+            </tr>
+            <tr>
+            <td style="border: 1px solid black;">Bermuda</td>
+            <td style="border: 1px solid black;">R$ 100,00</td>
+            <td style="border: 1px solid black;"><img src="Pictures/bermuda.jpeg" alt="Bermuda Preta"></td>
+            </tr>
+        </table> 
+        <br><br>
+        <label for="Contato"><strong><h3>Entre em Contato Conosco:</h3></strong></label>
+        <form action="contato.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <br><br>
+
+        
+            <footer>
+                
+                <p><a href="https:x.com">Twitter</a></p>
+                <p><a href="https://www.facebook.com/?locale=pt_BR">Facebook</a></p>
+                <p><a href="https://www.instagram.com/?hl=pt-br">Instagram</a></p>
+                <p>Todos os direitos reservados - 2025</p>
+              </footer>
+        
+</body>
+</html>
