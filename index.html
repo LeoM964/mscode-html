@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minha Loja</title>
+<link rel="stylesheet" href="styles.css">
+
 </head>
-<header id="header"><h1>Meu Site de Estudos</h1>
-    
-    <nav id = "nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="criarConta.html">Criar Conta</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-    <form action="search.html" method="get" style="display: inline-block; margin-left: 20px;">
-        <input type="text" name="q" placeholder="Buscar..." />
-        <button type="submit">Buscar</button>
-    </form>
-    </header>   
+
    
 <body>
+    <header id="header1">
+        <div><h1>Meu Site</h1></div>
+            <nav id="nav">
+              <ul>
+               <li><a href="index.html">Início</a></li>
+               <li><a href="criarConta.html">Criar Conta</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>        
+            </nav>
+        <form>
+            <label for="busca">Buscar</label>
+            <input type="text" name="busca" id="busca" placeholder="Buscar..." />
+            <button type="submit">Buscar</button>
+         </form> 
+    </header>
     <hr>
-    <h2>Bem-Vindo à nossa loja!</h2>
-    
-        <img src="Pictures/imagemprincipal.jpg" alt="Logo do Site" style="height: 50px; margin-right: 20px;">
-    <br><br><br>
+
+    <main>
+        <section id="inicio">
+
+           
+           <h2>Bem-Vindo à nossa loja!</h2>
+           <img src="Pictures/imagemprincipal.jpg" alt="Logo do Site" style="height: 50px; margin-right: 20px;">
+           
+        </section>
+
+       
+
+    <section id="categorias">
         <label for="categorias"><strong><h3>Categorias</h3></strong></label>
         <ul id="categorias">
             <li>Regras</li>
@@ -33,49 +46,55 @@
             <li>Links</li>
             <li>Perguntas e Respostas</li>
         </ul>
-    
+    </section>
             
             <label for="tabela de produtos"><strong><h3>Nossos Produtos</h3></strong></label>
         </table id="tabela de produtos">
-        <table style="border: 1px solid black; border-collapse: collapse;">
+        <table>
             <thead>
-             <th style="border: 1px solid black;">Nome</th>        
-             <th style="border: 1px solid black;">Valor</th>
-             <th style="border: 1px solid black;">Foto</th>
+             <th >Nome</th>        
+             <th >Valor</th>
+             <th >Foto</th>
             </thead>
             
             <tr>
-            <td style="border: 1px solid black;">Meia</td>
-            <td style="border: 1px solid black;">R$ 50,00</td>
-            <td style="border: 1px solid black;"><img src="Pictures/meia.jpeg" alt="Meia Branca"></td>
+            <td >Meia</td>
+            <td >R$ 50,00</td>
+            <td ><img src="Pictures/meia.jpeg" alt="Meia Branca"></td>
             </tr>
             <tr>
-            <td style="border: 1px solid black;">Camisa</td>
-            <td style="border: 1px solid black;">R$ 150,00</td>  
-            <td style="border: 1px solid black;"><img src="Pictures/camisa.jpeg" alt="Camisa Branca"></td>
+            <td >Camisa</td>
+            <td >R$ 150,00</td>  
+            <td ><img src="Pictures/camisa.jpeg" alt="Camisa Branca"></td>
             </tr>
             <tr>
-            <td style="border: 1px solid black;">Bermuda</td>
-            <td style="border: 1px solid black;">R$ 100,00</td>
-            <td style="border: 1px solid black;"><img src="Pictures/bermuda.jpeg" alt="Bermuda Preta"></td>
+            <td >Bermuda</td>
+            <td >R$ 100,00</td>
+            <td ><img src="Pictures/bermuda.jpeg" alt="Bermuda Preta"></td>
             </tr>
         </table> 
+
         <br><br>
+        <div id="contato">
         <label for="Contato"><strong><h3>Entre em Contato Conosco:</h3></strong></label>
         <form action="contato.html" method="post">
-            <label for="nome">Nome:</label>
+            <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required>
             <br><br>
-            <label for="email">Email:</label>
+            <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required>
             <br><br>
-            <label for="mensagem">Mensagem:</label>
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto">
+            <br><br>
+            <label for="mensagem">Mensagem:</label><br>
             <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
             <br><br>
             <button type="submit">Enviar</button>
         </form>
+    </div>
         <br><br>
-
+    </main>
         
             <footer>
                 
