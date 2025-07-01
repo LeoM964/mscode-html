@@ -24,7 +24,6 @@ document.getElementById ('soma').onclick = function () {
 
 document.getElementById ('subtracao').onclick = function () {
     const resultado = subtracao (num1.value, num2.value);
-    const saida = document.getElementById ('saida');
-    saida.value = resultado;
+    document.getElementById ('saida'.value = resultado;
        
 }

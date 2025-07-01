@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     
-    <h1>Login</h1>
+    <!-- <h1>Login</h1>
     <form action="login.php" method="post">
         <label for="E-mail">E-mail:</label>
         <input type="email" id="E-mail" name="E-mail" required placeholder="E-mail"><br><br>
@@ -16,7 +18,30 @@
         <input type="password" id="Senha" name="Senha" required placeholder="senha mínimo 6 dígitos"><br><br>
         
         <p><input type="checkbox" id="lembrar" name="lembrar">Aceito os Termos</p>
-        <button type="Login">Login</button>
-
+        <button type="Login">Login</button> -->
+        <div class="container-fluid w-50 d-flex justify-content-center align-items-center" style="height: 100vh;">
+            
+        <form class="p-4 border rounded shadow-lg">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Login</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="seu-email@email.com">
+              <div id="emailHelp" class="form-text">Não compartilhamos seu email</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Marque-me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <a href="meu site bootstrap.html" class="btn btn-secondary" >Voltar</a>
+          </form>
+        </div>
+   
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 </html>
